@@ -64,6 +64,7 @@ select_lines_outer.innerHTML = select_lines_htm;
 /*▲ 系統選択 */
 /*▼ 系統切り替え */
 function change_lines(id){
+  scroll({ top: 0 }); // Safariで真っ白になるのを防ぐ
   $Class('line').each((line_htm) => {
     line_htm.id === id
     ? line_htm.style.display = 'block'
