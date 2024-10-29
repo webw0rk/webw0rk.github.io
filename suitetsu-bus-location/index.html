@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+  <head prefix='og: https://ogp.me/ns#'>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>水間鉄道バスロケーション</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="https://webw0rk.github.io/suitetsu-bus-location" rel="canonical">
+    <meta content="水鉄バスのバスの現在位置を確認できるサイトです。" name="description">
+    <!--▼ OGP -->
+    <meta content="https://webw0rk.github.io/suitetsu-bus-location" property="og:url">
+    <meta content="水間鉄道バスロケーション" property="og:title">
+    <meta content="水鉄バスのバスの現在位置を確認できるサイトです。" property="og:description">
+    <meta content="thumbnail.jpg" property="og:image">
+    <!--▲ OGP -->
+    <script src="method.js"></script>
+    <link href="common.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GX5CF824RP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GX5CF824RP');
+    </script>
+  </head>
+  <body>
+    <header class="header">
+      <div class="header-top">
+        <h1 class="site-name">水間鉄道バスロケーション</h1>
+        <!-- メニューボタン -->
+        <button id="menu-btn" class="menu-btn" data-menu-visible="false">
+          <svg class="menu-btn-icon" viewBox="0 0 9 7" xmlns="http://www.w3.org/2000/svg">
+            <path d="M0 0H9V1H0Z M0 3H9V4H0Z M0 6H9V7H0Z"></path>
+          </svg>
+        </button>
+      </div>
+      <nav id="menu" class="menu" data-visible="false">
+        <a class="menu-link" href="https://suitetsu.com/bustimetable" target="blank">水鉄コスモスライナー時刻表【公式】</a>
+        <a class="menu-link" href="about.html" target="blank">このサイトについて</a>
+      </nav>
+      <div id="current-time-display" class="current-time-display"></div>
+      <div id="select-lines-outer" class="select-lines-outer"></div>
+    </header>
+    <main id="bus-road-display" class="bus-road-display"></main>
+    <script src="detect-holiday.js"></script>
+    <script src="lines-data.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

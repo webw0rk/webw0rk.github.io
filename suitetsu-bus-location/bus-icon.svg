@@ -1,0 +1,21 @@
+<svg viewBox="0 0 40 50" xmlns="http://www.w3.org/2000/svg" stroke="hsl(0, 0%, 20%)" stroke-width=".1">
+  <!-- 車体 -->
+  <path d="
+    M1 1.5 A130 130 0 0 1 39 1.5L39.5 11.5H.5Z
+    M40 29V45H0V29Z
+    M7 35H33V41H7Z
+  " fill="hsl(55, 100%, 50%)"/>
+  <!-- 案内表示 -->
+  <path d="M2 3H38L37.5 10H2.5Z" fill="hsl(0, 0%, 20%)"/>
+  <!-- シール -->
+  <path d="M3 4H7.5V9H3Z M32.5 4H37V9H32.5Z" fill="hsl(220, 100%, 50%)"/>
+  <!-- 窓 -->
+  <path d="M.5 11.5H39.5L40 29H0Z" fill="hsl(0, 0%, 20%)"/>
+  <!-- ライト -->
+  <path d="M0 35H7L8 41H0Z M33 35H40L40 41H32Z" fill="hsl(0, 0%, 20%)"/>
+  <path d="M1 36V40H6V36Z M34 36H39V40H34Z" fill="hsl(0, 0%, 90%)"/>
+  <!-- タイヤ -->
+  <path d="M3 45V50H7V45Z M33 45V50H37V45Z" fill="hsl(0, 0%, 20%)"/>
+  <!-- ナンバー -->
+  <path d="M16 41H24V45H16Z" fill="hsl(120, 100%, 25%)"/>
+</svg>
