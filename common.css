@@ -1,0 +1,12 @@
+*{
+  margin: 0;
+  --color: hsl(0, 0%, 25%);
+  color: var(--color);
+  font-family: serif;
+  box-sizing: border-box;
+}
+a{ color: hsl(220, 100%, 50%); }
+p{ margin: 1em 0; }
+input, textarea, button, select{
+  font-size: 16px;
+}
