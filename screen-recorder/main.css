@@ -1,0 +1,58 @@
+*{
+  --color: white;
+  --warning-color: hsl(0, 100%, 65%);
+  color: var(--color);
+}
+a{ color: var(--color); }
+.relative_css{ position: relative; }
+.absolute_css{ position: absolute; }
+.absolute_css[data-visible="true"]{ z-index: 1; }
+.flex-center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column;
+}
+.btn-style{
+  -moz-appearance: none; -webkit-appearance: none; appearance: none;
+  display: inline-block;
+  padding: 8px 16px;
+  border: 0;
+  background-color: hsl(210, 100%, 50%);
+  border-radius: 4px;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn-style:hover{ opacity: .8; }
+.content{
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+}
+.content-inner{ margin-bottom: 25px; }
+.screen-title{
+  font-size: 36px;
+  font-weight: bold;
+  line-height: 1; /* 文字下の隙間を無くす */
+}
+.top-title{ font-size: 48px; }
+.now-recording-screen{ border: 10px solid var(--warning-color); }
+.stop-recording{ background-color: var(--warning-color); }
+.preview{
+  max-width: 100%;
+  width: 600px;
+}
+.return-recording-screen{ background-color: var(--warning-color); }
+.not-recording-support-msg{
+  padding: 10px;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsla(0, 0%, 0%, 80%);
+}
+.not-recording-support-msg-txt{ font-size: 22px; }
+@media(max-width: 400px){
+  .screen-title{ font-size: 32px; }
+  .top-title{ font-size: 36px; }
+  .not-recording-support-msg-txt{ font-size: 16px; }
+}

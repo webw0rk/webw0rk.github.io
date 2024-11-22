@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PC 画面録画ツール</title>
+    <link href="favicon.ico" rel="icon">
+    <link href="https://webw0rk.github.io/suitetsu-bus-location" rel="canonical">
+    <meta content="PC に表示されている画面を録画して動画ファイルにして保存します。" name="description">
+    <!--▼ OGP -->
+    <meta content="https://webw0rk.github.io/screen-recorder" property="og:url">
+    <meta content="PC 画面録画ツール" property="og:title">
+    <meta content="PC に表示されている画面を録画して動画ファイルにして保存します。" property="og:description">
+    <meta content="summary" name="twitter:card">
+    <!--▲ OGP -->
+    <script src="../method.js"></script>
+    <link href="../common.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GX5CF824RP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GX5CF824RP');
+    </script>
+  </head>
+  <body>
+    <div class="contents relative_css">
+      <div id="start-share-screen" class="
+        start-share-screen
+        content
+        content_js
+        flex-center
+        absolute_css
+      ">
+        <div class="content-inner">
+          <h1 class="top-title screen-title">PC 画面録画ツール</h1>
+        </div>
+        <div class="content-inner">
+PC のみの対応でスマホなどのモバイル端末には対応していません。<br>
+音声録画に対応しているのは Chrome と Opera のみ、<br>
+Mac で録音できるのはブラウザの音声のみです。<br>
+録画データがサイトに収集されることはありません。
+</div>
+        <div class="content-inner">
+          <button id="share-screen" class="share-screen btn-style">画面共有を開始</button>
+        </div>
+      </div>
+      <div id="start-recording-screen" class="
+        start-recording-screen
+        flex-center
+        content
+        content_js
+        absolute_css
+      ">
+        <div class="screen-title content-inner">録画の準備ができました</div>
+        <div class="content-inner">
+          <button id="start-recording" class="start-recording btn-style">録画開始</button>
+        </div>
+      </div>
+      <div id="now-recording-screen" class="
+        now-recording-screen
+        flex-center
+        content
+        content_js
+        absolute_css
+      ">
+        <div class="screen-title content-inner">録画中です...</div>
+        <div class="content-inner">録画データをダウンロードするまで画面を閉じないで下さい。</div>
+        <div class="content-inner">
+          <button id="stop-recording" class="stop-recording btn-style">録画終了</button>
+        </div>
+      </div>
+      <div id="load-preview" class="
+        load-preview
+        content
+        content_js
+        flex-center
+        absolute_css
+      ">
+        <div>
+          <div class="screen-title content-inner">プレビュー</div>
+          <div class="preview-outer content-inner">
+            <video id="preview" class="preview" controls></video>
+          </div>
+          <div class="content-inner">
+            <a id="download" class="download btn-style" download>ダウンロード</a>
+            <button id="return-recording-screen" class="return-recording-screen btn-style">プレビューを終了</button>
+          </div>
+        </div>
+      </div>
+      <div id="not-recording-support-msg" class="
+        not-recording-support-msg
+        msg_js
+        flex-center
+        absolute_css
+      ">
+        <div class="not-recording-support-msg-txt msg-inner">
+あなたのブラウザはこのツールに対応していません<br>
+PC 版の Chrome または Opera でご利用下さい。
+</div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
