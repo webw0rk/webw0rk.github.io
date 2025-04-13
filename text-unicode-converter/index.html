@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>文字列を Unicode に変換するツール</title>
+    <link href="https://webw0rk.github.io/text-unicode-converter" rel="canonical">
+    <meta content="文字列を Unicode 表記に変換するツールです。Javascript と CSS の疑似要素の content で使う形式に変換できます。" name="description">
+    <!--▼ OGP -->
+    <meta content="https://webw0rk.github.io/text-unicode-converter" property="og:url">
+    <meta content="文字列を Unicode に変換するツール" property="og:title">
+    <meta content="文字列を Unicode 表記に変換するツールです。Javascript と CSS の疑似要素の content で使う形式に変換できます。" property="og:description">
+    <meta content="summary" name="twitter:card">
+    <!--▲ OGP -->
+    <script src="../method.js"></script>
+    <link href="../common.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GX5CF824RP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GX5CF824RP');
+    </script>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="title">文字列を Unicode に変換するツール</h1>
+      <textarea id="input-txt-elem" class="input-txt-elem" placeholder="ここに文字列を入力"></textarea>
+      <button id="convert-btn" class="convert-btn">変換</button>
+      <div class="convert-results">
+        <h2 class="result-title">Javascript 用表記</h2>
+        <textarea id="unicode-txt-elem" class="unicode-txt-elem" readonly placeholder="ここに出力されます"></textarea>
+        <h2 class="result-title">CSS 用表記</h2>
+        <textarea id="pseudo-txt-elem" class="pseudo-txt-elem" readonly placeholder="ここに出力されます"></textarea>
+      </div>
+      <p>文字列を Unicode 表記に変換するツールです。</p>
+      <p>Unicode に変換したい文字列を当ページ最上部の入力欄に入力し、「変換」を押して下さい。</p>
+      <p>Javascript のコード内で使う場合は「Javascript 用表記」(\uxxxx の形式) の欄のものを使って下さい。</p>
+      <p>CSS の疑似要素の content プロパティの値の文字化け対策をする場合は「CSS 用表記」(\xxxxx) の欄のものを使って下さい。</p>
+      <p>変換結果の欄をクリックすると文字列がコピーされます。</p>
+      <p>入力した内容が当サイトに収集されることはありません。</p>
+      <div id="credit"></div>
+    </main>
+    <script src="main.js"></script>
+    <script src="../credit.js"></script>
+  </body>
+</html>

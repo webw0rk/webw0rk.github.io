@@ -1,0 +1,28 @@
+.main{
+  margin: auto;
+  padding: 10px;
+  max-width: 800px;
+}
+.title{ font-size: 30px; }
+.input-txt-elem, .unicode-txt-elem, .pseudo-txt-elem{
+  display: block;
+  margin: 10px 0;
+  width: 100%;
+  height: 200px;
+  resize: vertical;
+}
+.convert-btn{
+  display: block;
+  /*▼ CSSリセット */
+  -moz-appearance: none; -webkit-appearance: none; appearance: none;
+  border-radius: 8px;
+  border: 0;
+  /*▲ CSSリセット */
+  padding: 8px 16px;
+  background-color: hsl(210, 100%, 50%);
+  color: white;
+  cursor: pointer;
+}
+.convert-btn:hover{ opacity: .8; }
+.convert-results{ margin: 20px 0 25px 0; }
+.result-title{ font-size: 22px; }
