@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>文字列置換ツール</title>
+    <link href="https://webw0rk.github.io/text-replacer" rel="canonical">
+    <meta content="指定した文字列を一括で全て置換します。" name="description">
+    <!--▼ OGP -->
+    <meta content="https://webw0rk.github.io/text-replacer" property="og:url">
+    <meta content="文字列置換ツール" property="og:title">
+    <meta content="指定した文字列を一括で全て置換します。" property="og:description">
+    <meta content="summary" name="twitter:card">
+    <!--▲ OGP -->
+    <script src="../method.js"></script>
+    <link href="../common.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GX5CF824RP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GX5CF824RP');
+    </script>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="title">文字列置換ツール</h1>
+      <div class="sentence-display">
+        <textarea id="sentence-txt-elem" class="sentence-txt-elem" placeholder="ここに文章を入力"></textarea>
+        <textarea id="replaced-txt-elem" class="replaced-txt-elem" readonly placeholder="ここに出力されます"></textarea>
+      </div>
+      <div id="input-areas" class="input-areas"></div>
+      <button id="add-input-area" class="add-input-area">入力欄を追加</button>
+      <button id="exec-replace" class="exec-replace">置き換え</button>
+      <div>
+        <p>指定した文字列を一括で全て置換します。</p>
+        <p>特定の文字列だけを全削除したい場合は 1 つ目の入力欄に削除したい文字列を入力し、2 つ目の入力欄を空欄にして下さい。</p>
+        <p>入力内容が当サイトに収集されることはありません。</p>
+      </div>
+      <div id="credit"></div>
+    </main>
+    <script src="main.js"></script>
+    <script src="../credit.js"></script>
+  </body>
+</html>
