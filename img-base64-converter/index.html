@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>画像を base64 に変換するツール</title>
+    <link href="https://webw0rk.github.io/img-base64-converter" rel="canonical">
+    <meta content="画像ファイルを base64 URL の文字列に変換できます。" name="description">
+    <!--▼ OGP -->
+    <meta content="https://webw0rk.github.io/img-base64-converter" property="og:url">
+    <meta content="画像を base64 に変換するツール" property="og:title">
+    <meta content="画像ファイルを base64 URL の文字列に変換できます。" property="og:description">
+    <meta content="summary" name="twitter:card">
+    <!--▲ OGP -->
+    <script src="../method.js"></script>
+    <link href="../common.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GX5CF824RP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GX5CF824RP');
+    </script>
+  </head>
+  <body>
+    <main class="main">
+      <h1 class="title">画像を base64 に変換するツール</h1>
+      <input id="upload-file-btn" class="upload-file-btn" type="file" accept="image/*">
+      <div class="converter-outer">
+        <div id="drop-file-elem" class="drop-file-elem" data-dragover="false">
+          <div id="drop-file-msg-elem" class="drop-file-msg-elem" data-visible="true">ここにファイルをドロップ</div>
+          <div id="loading-msg-elem" class="loading-msg-elem" data-visible="false">処理中...</div>
+          <div id="img-preview-elem" class="img-preview-elem" data-visible="false"></div>
+        </div>
+        <textarea
+          id="output-txt-elem"
+          class="output-txt-elem"
+          placeholder="ここに URL が出力されます"
+          readonly
+        ></textarea>
+      </div>
+      <p>画像ファイルを base64 の URL の文字列に変換するツールです。</p>
+      <p>PC の場合はドラッグアンドドロップでも画像をアップロードできます。</p>
+      <p>容量の大きいファイル (特に 1 MB 以上) は処理に時間を要する場合があるため、容量の上限を <span id="max-file-size-elem"></span> MB に制限しています。</p>
+      <p>アップロードした画像が当サイトに収集されることはありません。</p>
+      <div id="credit"></div>
+    </main>
+    <script src="main.js"></script>
+    <script src="../credit.js"></script>
+  </body>
+</html>
