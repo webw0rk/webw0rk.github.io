@@ -20,10 +20,9 @@
     grid-template-columns: 1fr;
   }
 }
-.sentence-txt-elem, .replaced-txt-elem{
-  height: 200px;
-  resize: vertical;
-}
+.sentence-txt-elem, .replaced-txt-elem{ height: 200px; }
+.sentence-txt-elem{ resize: vertical; }
+.replaced-txt-elem{ resize: none; }
 .before-txt, .after-txt{ width: 110px; }
 .add-input-area{ margin-bottom: 10px; }
 .exec-replace{
