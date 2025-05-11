@@ -9,8 +9,9 @@
   margin: 10px 0;
   width: 100%;
   height: 200px;
-  resize: vertical;
 }
+.input-txt-elem{ resize: vertical; }
+.unicode-txt-elem, .pseudo-txt-elem{ resize: none; }
 .convert-btn{
   display: block;
   /*▼ CSSリセット */
