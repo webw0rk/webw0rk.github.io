@@ -13,7 +13,6 @@ $Id('max-file-size-elem').innerText = max_file_size;
 const filereader = new FileReader();
 
 function file_process($file){
-  console.log($file);
   if(!$file) return; // 異物がドロップされたら処理停止
 
   if(!$file.type.match(/image\/.+/)){
