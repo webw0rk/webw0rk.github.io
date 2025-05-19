@@ -4,9 +4,22 @@
   color: var(--color);
   font-family: serif;
   box-sizing: border-box;
+  word-wrap: anywhere;
+}
+::file-selector-button{ /* 新しいブラウザ用 */
+  color: var(--color);
+  font-family: serif;
+  box-sizing: border-box;
+  word-wrap: anywhere;
+}
+::-webkit-file-upload-button{ /* 少し古いブラウザ用 */
+  color: var(--color);
+  font-family: serif;
+  box-sizing: border-box;
+  word-wrap: anywhere;
 }
 a{ color: hsl(220, 100%, 50%); }
 p{ margin: 1em 0; }
-input, textarea, button, select{
+input, textarea, button, select, ::file-selector-button{
   font-size: 16px;
 }
