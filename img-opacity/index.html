@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <title>画像を透明化するツール</title>
+    <link href="https://webw0rk.github.io/img-opacity/" rel="canonical">
+    <meta content="PNG や WebP 画像のクリックした箇所と同じ色を、指定した割合で透明化します。" name="description">
+    <!--▼ OGP -->
+    <meta content="https://webw0rk.github.io/img-img-opacity/" property="og:url">
+    <meta content="画像を透明化するツール" property="og:title">
+    <meta content="PNG や WebP 画像のクリックした箇所と同じ色を、指定した割合で透明化します。" property="og:description">
+    <meta content="summary" name="twitter:card">
+    <!--▲ OGP -->
+    <script src="../method.js"></script>
+    <link href="../common.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-GX5CF824RP"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-GX5CF824RP');
+    </script>
+  </head>
+  <body data-loading="false">
+    <main class="main">
+      <h1 class="title">画像を透明化するツール</h1>
+      <div class="controller">
+        <div><input id="upload-file-btn" type="file" style="width: 280px;"></div>
+        <div>透明度: <input id="opacity-controller" style="width: 50px;">%</div>
+        <div><button id="dl-btn">ダウンロード</button></div>
+        <div style="width: 100%;">選択色: <span id="select-color-viewer"></span></div>
+      </div>
+      <div class="upload-img-outer" style="height: 350px; background-image: url(
+'data:image/svg+xml,%3Csvg%20viewBox%3D%220%200%202%202%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%20%20%3Cpath%20d%3D%22M0%200H1V1H2V2H1V1H0Z%22%20fill%3D%22hsl(0%2C%200%25%2C%2088%25)%22%2F%3E%0A%3C%2Fsvg%3E'
+      );">
+        <canvas id="upload-img-canvas" class="no-under-gap" width="0" height="0"></canvas>
+      </div>
+      <div id="file-drag-overlay" class="file-drag-overlay flex-center" data-dragged="false">
+        <div class="file-drag-msg">ここにファイルをドロップ</div>
+      </div>
+      <h2>使い方</h2>
+      <p>画像のクリックした箇所と同じ色を、指定した透明度で<b>透明化</b>します。透明度は 0 ～ 100 のパーセントの数値を入力して変更できます。</p>
+      <p>当ページのどこかにファイルをドラッグアンドドロップしても、ファイルをアップロードできます。</p>
+      <p>画像は <span id="max-file-size-elem"></span> MB 以下の<b> PNG </b>か<b> WebP </b>ファイルをアップロードして下さい。</p>
+      <p>画像が枠からはみ出す時はスクロールできます。</p>
+      <h2>注意点</h2>
+      <p>PC のブラウザでの利用を推奨します。容量の大きい画像は、処理に時間がかかったり、iOS のブラウザでは処理できなかったりする場合があります。</p>
+      <p>JPEG や GIF ファイルの画像ではできません。</p>
+      <p>アップロードした画像に最初から透明化されている箇所がある場合、その箇所の透明度を変更すると、色がおかしくなるなど上手くいかない場合があります。</p>
+      <p>これらは技術的に止むを得ないため御了承下さい。申し訳ありません。</p>
+      <h2>プライバシーについて</h2>
+      <p>アップロードした画像や入力データが当サイトに送信されることはありません。</p>
+      <hr class="main-content-last">
+      <div id="credit"></div>
+    </main>
+    <script src="main.js"></script>
+    <script src="../credit.js"></script>
+  </body>
+</html>

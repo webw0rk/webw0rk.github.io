@@ -1,0 +1,54 @@
+.flex-center{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.no-under-gap{ display: block }
+.main{
+  margin: auto;
+  padding: 10px;
+  max-width: 800px;
+  --gap: 12px;
+}
+.title{ font-size: 30px; }
+
+[data-loading="true"]{ cursor: wait; }
+
+.controller{
+  display: flex;
+  flex-wrap: wrap;
+}
+.controller{ margin: var(--gap) 0 0 0; } /* 古いブラウザ用 */
+.controller>*{ margin: 0 var(--gap) var(--gap) 0; } /* 古いブラウザ用 */
+@supports selector(:has(_)){ /* 新しいブラウザ用 */
+  .controller{
+    margin: var(--gap) 0;
+    gap: var(--gap);
+  }
+  .controller>*{ margin: 0; } /* 古いブラウザ用を無効化 */
+}
+
+.upload-img-outer{
+  margin-bottom: 20px;
+  overflow: scroll;
+  background-size: 18px;
+  overscroll-behavior: none;
+  border: 1px solid gray;
+}
+
+.file-drag-overlay{
+  position: absolute;
+  bottom: 0; left: 0;
+  width: 100%; height: 100vh; /* フォールバック */  height: 100dvh;
+  background-color: white;
+}
+.file-drag-msg{ font-size: 20px; }
+@media (min-width: 400px){
+  .file-drag-msg{ font-size: 26px; }
+}
+@media (min-width: 600px){
+  .file-drag-msg{ font-size: 36px; }
+}
+.file-drag-overlay[data-dragged="false"]{ visibility: hidden; }
+
+.main-content-last{ margin: 24px 0; }
