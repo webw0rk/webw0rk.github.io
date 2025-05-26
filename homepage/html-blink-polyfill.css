@@ -1,0 +1,20 @@
+blink{
+  -moz-animation: 1.5s linear infinite blink;
+  -webkit-animation: 1.5s linear infinite blink;
+  animation: 1.5s linear infinite blink;
+}
+@-moz-keyframes blink{
+  0%{ visibility: visible; }
+  50%{ visibility: hidden; }
+  100%{ visibility: hidden; }
+}
+@-webkit-keyframes blink{
+  0%{ visibility: visible; }
+  50%{ visibility: hidden; }
+  100%{ visibility: hidden; }
+}
+@keyframes blink{
+  0%{ visibility: visible; }
+  50%{ visibility: hidden; }
+  100%{ visibility: hidden; }
+}
