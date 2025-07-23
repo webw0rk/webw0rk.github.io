@@ -1,14 +1,14 @@
 .main{
   margin: auto;
-  padding: 10px;
+  padding: 12px;
   max-width: 1000px;
 }
 .title{ font-size: 30px; }
-.upload-file-btn{ margin: 12px 0 10px 0; }
+.upload-file-btn{ margin: 12px 0; }
 .converter-outer{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 10px;
+  gap: 12px;
 }
 .converter-outer>*{ height: 300px; }
 @media(max-width: 500px){
