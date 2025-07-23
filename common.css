@@ -1,25 +1,53 @@
-*{
+html, body,
+div, p, ul, ol, li,
+span, a, b, i, u, s, br,
+img, svg,
+form, label,
+h1, h2, h3, h4, h5, h6,
+input, textarea, select, button{
   margin: 0;
-  --color: hsl(0, 0%, 25%);
-  color: var(--color);
-  font-family: serif;
+  font-family: inherit;
   box-sizing: border-box;
-  word-wrap: anywhere;
+  line-height: 1.6;
+  word-break: break-word; word-wrap: anywhere;
+  overflow-wrap: anywhere;
+  scroll-behavior: smooth;
+  -moz-text-size-adjust: none; -webkit-text-size-adjust: none; text-size-adjust: none;
 }
-::file-selector-button{ /* 新しいブラウザ用 */
-  color: var(--color);
+html, body,
+div, p, ul, ol, li,
+span, a, b, i, u, s, br,
+img, svg,
+form, label,
+input, textarea, select, button{
+  font-size: inherit;
+}
+html, body,
+div, p, ul, ol, li,
+span, a, b, i, u, s, br,
+img, svg,
+form, label,
+h1, h2, h3, h4, h5, h6{
+  padding: 0;
+  border: 0;
+}
+body{
+  --cmn-font-color: hsl(0, 0%, 30%);
+  --p-margin-block: 1em;
   font-family: serif;
-  box-sizing: border-box;
-  word-wrap: anywhere;
+  font-size: 18px;
+  color: var(--cmn-font-color);
 }
-::-webkit-file-upload-button{ /* 少し古いブラウザ用 */
-  color: var(--color);
-  font-family: serif;
-  box-sizing: border-box;
-  word-wrap: anywhere;
+a[href]{ color: hsl(220, 100%, 50%); }
+a[href]:hover{ color: hsl(120, 100%, 20%); }
+a[href]:active{ color: hsl(0, 100%, 45%); }
+p{
+  margin: var(--p-margin-block) 0; margin-block-start: var(--p-margin-block); margin-block-end: var(--p-margin-block); /* フォールバック */
+  margin-block: var(--p-margin-block);
 }
-a{ color: hsl(220, 100%, 50%); }
-p{ margin: 1em 0; }
-input, textarea, button, select, ::file-selector-button{
-  font-size: 16px;
-}
+/* 要素はみ出し防止 */
+img, input, textarea, select{ max-width: 100%; }
+
+/* リストの初期設定 */
+ul, ol{ padding-inline-start: 1.5em; }
+ul{ list-style: square; }
