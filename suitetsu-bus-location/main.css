@@ -30,7 +30,7 @@
 .menu-btn[data-menu-visible="true"]{ opacity: .5; }
 .menu-btn-icon{
   width: 100%;
-  fill: var(--color);
+  fill: var(--cmn-font-color);
 }
 .menu{
   position: absolute;
@@ -62,10 +62,10 @@
 }
 .select-lines{
   padding: 2px;
-  font-size: 18px;
   width: 100%;
-  border: 1px solid;
+  border: 1px solid currentColor;
   border-radius: 0;
+  color: var(--cmn-font-color);
   background-color: white;
 }
 .bus-road-display{
