@@ -3,23 +3,33 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>webw0rk.github.io</title>
-    <link rel="canonical" href="https://webw0rk.github.io">
     <script src="method.js"></script>
     <link rel="stylesheet" href="common.css">
     <style>
 .main{ padding: 12px; }
-.title{ font-size: 30px; }
+.domain-name{ font-size: 30px; }
     </style>
     <script id="google-analytics-elem" src="google-analytics.js"></script>
+    <!-- Google Search Console -->
+    <meta name="google-site-verification" content="JayZjAkph4RMUuKHCmu66WOAe-H5aVL6kInjpxWzs7U">
   </head>
   <body>
     <main class="main">
-      <h1 id="title-elem" class="title"></h1>
+      <h1 id="domain-name-elem" class="domain-name"></h1>
     </main>
     <script>
-// 見出しにドメイン名を表示
-$Id('title-elem').innerText = location.origin.replace(/^(http|https):\/\//, '');
+let title_elem = document.createElement('title');
+
+const domain = location.origin.replace(/^(http|https):\/\//, '');
+$Id('domain-name-elem').innerText = domain; // 見出しにドメイン名を表示
+title_elem.innerText = domain; // title タグにドメイン名を表示
+
+document.head.appendChild(title_elem);
+
+// URL 正規化のメタタグを追加
+let link_elem = document.createElement('link');
+link_elem.rel = 'canonical'; link_elem.href = location.origin;
+document.head.appendChild(link_elem);
     </script>
   </body>
 </html>
